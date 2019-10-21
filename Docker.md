@@ -19,8 +19,10 @@ The first thing is the base of everything in this platform, container. This is t
 //***Proceso para montar una instancia de docker***
 
 Sentencia para crear un contenedor de docker con la imagen de postgres con el nombre de la base de datos y el puerto al que se conecta:
-sudo docker run -d --name pepetest  -p 5432:5432 postgres
-
+First thing to know is how to create a container in Docker with the 
+```
+sudo docker run -d --name [name]  -p [5432:5432] [program]
+```
 Sentencia para montar un proyecto sql sobre el puerto de la compu donde se encuentra el contenedor de docker:
 sudo psql -h localhost -p 5432 -d postgres -U postgres  < /home/jesus/Escritorio/Proyecto1FULL.sql
 
