@@ -7,3 +7,5 @@ $sudo service --status-all
 ```
 $sudo systemctl [start/stop][service_Name]
 ```
+-List all the ports of the computer, then make a group of the ones that are LISTENING to something.
+sudo lsof -i -P -n | grep LISTEN
